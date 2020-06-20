@@ -36,38 +36,40 @@ if (condicao1) {
 
 //Cálculo de aposentadoria
 
+// se for F e contribui mais ou igual a 30 e o total de contribuicao maior que 85
+//ou
+// se for M e contribui mais ou igual a 35 e o total de contribuicao maior que 95
+// pode aposentar
+// se não
+// nao pode aposentar 
+
+
 const nome = "Silvana"
 const sexo = "F"
-const idade = 48
-const contribuicao = 23
+const idade = 70
+const contribuicao = 29
 
 //regra 85-95
 const totalContribuicao = idade + contribuicao
 
-// ******* logica incorreta *************
-//
-// if (totalContribuicao >= 85) {
-//     if (sexo == "M" || totalContribuicao >= 95) {
-//       // Condição 1 e 2 passaram
-//       console.log(`00 ${nome}, você pode se aposentar`)
-//     } else {
-//       // Condição 1 passou, porém condição 2 não passou
-//       console.log(`01 - ${nome}, você NÃO pode se aposentar`)
-//     }
-//   } else {
-//     // Condição 1 não passou ( idade menor)
-//     console.log(`02 - ${nome}, você NÃO pode se aposentar`)
-//   }
+if ((sexo == "F" && contribuicao >= 30 && totalContribuicao >= 85)
+    ||
+    (sexo == "M" && contribuicao >= 35 && totalContribuicao >= 95))
+    {
+    console.log ( `${nome} pode aposentar` )
+    } else {
+    console.log ( `${nome} não pode aposentar` )
+}
 
 
-// ******* logica correta *************
+// ******* logica instrutor *************
 
 // essas variáveis irão retornar true ou false
-const homemPodeAposentar = sexo == 'M' && contribuicao >= 35 && totalContribuicao >= 95
-const mulherPodeAposentar = sexo == 'F' && contribuicao >= 30 && totalContribuicao >= 85
+// const homemPodeAposentar = sexo == 'M' && contribuicao >= 35 && totalContribuicao >= 95
+// const mulherPodeAposentar = sexo == 'F' && contribuicao >= 30 && totalContribuicao >= 85
 
-if ( homemPodeAposentar || mulherPodeAposentar) {
-    console.log(`${nome}, você pode se aposentar!`)
-} else {
-    console.log(`${nome}, você não pode se aposentar!`)
-}
+// if ( homemPodeAposentar || mulherPodeAposentar) {
+//     console.log(`${nome}, você pode se aposentar!`)
+// } else {
+//     console.log(`${nome}, você não pode se aposentar!`)
+// }
