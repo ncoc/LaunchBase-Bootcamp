@@ -14,8 +14,8 @@
 
 ### Introdução à programação WEB
 
-- [Desafio 1-1](desafios-01-1.js)
-- [Desafio 1-2](desafios-01-2.js)
+- Calculadora IMC: [Desafio 1-1](desafios-01-1.js)
+- Calculando aposentadoria: [Desafio 1-2](desafios-01-2.js)
 
 ---
 Feito com 💔: Nilton Cardoso
