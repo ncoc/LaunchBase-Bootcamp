@@ -23,13 +23,14 @@ const usuarios = [
 
 // Percorra a lista de usuários com uma estrutura de repetição imprimindo em tela as informações dos usuários:
 
-    for ( let i = 0; i < usuarios.length; i++ ) {
-       //O método join() junta todos os elementos de uma array (ou um array-like object) em uma string e retorna esta string.
-        console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias.join(", ")}`)
-     }
+    // for ( let i = 0; i < usuarios.length; i++ ) {
+    //    //O método join() junta todos os elementos de uma array (ou um array-like object) em uma string e retorna esta string.
+    //     console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias.join(", ")}`)
+    //  }
 
 
-//Lógica do instrutor
+
+//Lógica do instrutor Mayk Brito
 // for (let a = 0; a < usuarios.length; a++) {
 
 //     let tecnologias = "";
@@ -42,6 +43,29 @@ const usuarios = [
 //     }
 //     console.log(`${usuarios[a].nome} trabalha com ${tecnologias}`)    
 // }
+
+
+//Resolvendo com for...of
+
+// para (usuário de usuarios)
+for (let usuario of usuarios) {
+    //faça alguma coisa
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(", ")}`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
