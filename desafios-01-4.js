@@ -1,5 +1,10 @@
 // Busca por tecnologia
 // Baseado no desafio anterior, utilize a mesma lista de usuários construída.
+const usuarios = [
+  { nome: "Carlos", tecnologias: ["HTML", "CSS"] },
+  { nome: "Jasmine", tecnologias: ["JavaScript", "CSS"] },
+  { nome: "Tuane", tecnologias: ["HTML", "Node.js"] }
+];
 
 // Crie uma função que recebe os dados de um objeto de usuário e retorna SE o usuário trabalha com CSS ou não. Essa função deve retornar um boolean true/false
 
