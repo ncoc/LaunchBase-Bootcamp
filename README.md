@@ -16,6 +16,6 @@
 
 - Calculadora IMC: [Desafio 1-1](desafios-01-1.js)
 - Calculando aposentadoria: [Desafio 1-2](desafios-01-2.js)
-
+- Informações de usuários: [Desafio 1-3](desafios-01-3.js)
 ---
 Feito com 💔: Nilton Cardoso
